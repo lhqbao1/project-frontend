@@ -1,0 +1,117 @@
+.doctor {
+    height: 380px;
+    background: #fff;
+
+
+    .doctor-containter {
+        margin: 0 140px;
+        display: flex;
+        flex-direction: column;
+
+        .doctor-header {
+            height: 60px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            justify-content: space-between;
+            margin-right: 15px;
+
+            span {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            button {
+                text-transform: uppercase;
+                color: #333;
+                background: transparent;
+                outline: none;
+                border: none;
+                background: #ccc;
+                padding: 10px 15px;
+            }
+        }
+
+        .doctor-content {
+            display: flex;
+            flex-direction: column;
+
+
+
+            .img-customize {
+                border: 1px solid #eee;
+                width: 275px !important;
+                height: 245px !important;
+                display: flex !important;
+                align-items: center !important;
+                flex-direction: column !important;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+
+                }
+
+                div,
+                .sub-content {
+                    margin-top: 5px;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #111111;
+                }
+
+                .sub-content {
+                    font-size: 12px !important;
+                    color: #555555;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+//reset slick slider css
+.slick-prev {
+    // position: relative !important;
+    left: -15px !important;
+    z-index: 1000 !important;
+    height: 48px !important;
+    width: 44px !important;
+    border: 2px solid #d7d7d7 !important;
+    background-color: #fff !important;
+    font-weight: bold !important;
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-next {
+    right: -5px !important;
+    height: 48px !important;
+    width: 44px !important;
+    border: 2px solid #d7d7d7 !important;
+    background-color: #fff !important;
+    font-weight: bold !important;
+
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-next::before {
+    font-family: FontAwesome !important;
+    color: #45c3d2 !important;
+}
+
+.slick-prev::before {
+    font-family: FontAwesome !important;
+    color: #45c3d2 !important;
+
+}

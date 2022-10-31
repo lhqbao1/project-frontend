@@ -1,0 +1,99 @@
+.specialty {
+    height: 330px;
+    background: #fff;
+
+    .specialty-containter {
+        margin: 0 140px 0 140px;
+        display: flex;
+        flex-direction: column;
+
+        .specialty-header {
+            height: 60px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            justify-content: space-between;
+            margin-right: 15px;
+
+            span {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            button {
+                text-transform: uppercase;
+                color: #333;
+                background: transparent;
+                outline: none;
+                border: none;
+                background: #ccc;
+                padding: 10px 15px;
+            }
+        }
+
+        .specialty-content {
+            display: flex;
+            flex-direction: column;
+
+
+            .img-customize {
+
+                img {
+                    width: 95%;
+                }
+
+                div {
+                    margin-top: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+//reset slick slider css
+.slick-prev {
+    // position: relative !important;
+    left: -15px !important;
+    z-index: 1000 !important;
+    height: 48px !important;
+    width: 44px !important;
+    border: 2px solid #d7d7d7 !important;
+    background-color: #fff !important;
+    font-weight: bold !important;
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-next {
+    right: -5px !important;
+    height: 48px !important;
+    width: 44px !important;
+    border: 2px solid #d7d7d7 !important;
+    background-color: #fff !important;
+    font-weight: bold !important;
+
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-next::before {
+    font-family: FontAwesome !important;
+    color: #45c3d2 !important;
+}
+
+.slick-prev::before {
+    font-family: FontAwesome !important;
+    color: #45c3d2 !important;
+
+}

@@ -1,0 +1,295 @@
+.home-header-containter {
+    height: 80px;
+    width: 100%;
+    margin-top: 3px;
+    padding: 0 20px;
+    position: sticky;
+    background: #fff;
+    z-index: 10000;
+    top: 0;
+
+    .home-header-content {
+        height: 100%;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .left-content-logo {
+                background: url('../../assets/bookingcare-2020.svg') center center no-repeat;
+                height: 65%;
+                width: 80%;
+                cursor: pointer;
+            }
+
+            .left-content-icon {
+                font-size: 20px;
+                cursor: pointer;
+                padding-left: 20px;
+            }
+        }
+
+        .center-content {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .center-content-item {
+                cursor: pointer;
+
+                .center-content-item-item {
+                    color: grey;
+                }
+            }
+
+        }
+
+        .right-content {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 15px;
+
+
+
+            .right-content-item {
+                display: flex;
+
+                .right-content-text {
+                    font-weight: 700;
+                    color: grey;
+                    cursor: pointer;
+                }
+
+                .right-content-icon {
+                    color: #45c3d2;
+                }
+            }
+
+            .right-content-language {
+                display: flex;
+
+                .language-vi {
+                    cursor: pointer;
+                    padding-right: 5px;
+
+                    &.active {
+                        color: red;
+                    }
+                }
+
+                .language-en {
+                    cursor: pointer;
+
+                    &.active {
+                        color: blue;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.home-header-banner {
+    height: 700px;
+    background: url('../../assets/bookingcare-cover-4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    .home-header-banner-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 65%;
+        padding-top: 90px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.408), rgba(255, 255, 255, 0));
+
+        .title-first-subtitle {
+            text-align: center;
+            font-size: 32px;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px #333;
+            font-weight: bold;
+
+        }
+
+        .title-second-subtitle {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        .home-header-banner-search {
+            background-color: #f7d800;
+            height: 60px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 20px;
+
+            i {
+                font-size: 17px;
+                padding: 10px;
+            }
+
+            input {
+                width: 400px;
+                height: 40px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .options {
+        width: 100%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        padding-top: 80px;
+        padding-bottom: 20px;
+        height: 35%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .options-content {
+            width: 10%;
+            height: 200px;
+
+            .options-content-image {
+                background: url('../../assets/133537-khamchuyenkhoa.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-2 {
+                background: url('../../assets/133657-khamtuxa.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-3 {
+                background: url('../../assets/133744-khamtongquat.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-4 {
+                background: url('../../assets/133744-dichvuxetnghiem.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-5 {
+                background: url('../../assets/133744-suckhoetinhthan.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-6 {
+                background: url('../../assets/104635-khamnhakhoa.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-7 {
+                background: url('../../assets/151930-phau-thuat.jpeg') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-8 {
+                background: url('../../assets/133744-khamtainha.png') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-image-9 {
+                background: url('../../assets/101157-icon-lich-su.jpeg') center center no-repeat;
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                margin: 2px auto;
+                background-color: #fff;
+                background-size: 32px;
+                border-radius: 50%;
+                padding: 25px;
+                border: 2px solid #45c3d2;
+            }
+
+            .options-content-text {
+                text-align: center;
+                font-weight: 900;
+                font-size: 17px;
+            }
+        }
+    }
+}

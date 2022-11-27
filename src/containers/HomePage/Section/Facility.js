@@ -2,14 +2,36 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Facility.scss';
 import { FormattedMessage } from 'react-intl';
+import { withRouter } from 'react-router';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import facility from '../../../assets/facility/114348-bv-viet-duc.jpeg';
+import { getAllClinic } from '../../../services/userService'
 
 
 class Facility extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataClinic: [],
+
+        }
+    }
+    async componentDidMount() {
+        let res = await getAllClinic()
+
+        if (res && res.errCode === 0) {
+            this.setState({
+                dataClinic: res.data
+            })
+        }
+    }
+
+    handleOnlick = (clinic) => {
+        this.props.history.push(`/detail-clinic/${clinic.id}`)
+    }
 
     render() {
         let settings = {
@@ -22,34 +44,29 @@ class Facility extends Component {
             // prevArrow: <SamplePrevArrow />
 
         };
+        let { dataClinic } = this.state
         return (
             <div className='facility'>
                 <div className='facility-containter'>
                     <div className='facility-header'>
-                        <span>Cơ sở y tế nổi bật</span>
-                        <button>Xem thêm</button>
+                        <span><FormattedMessage id="homeheader.facility2" /></span>
+                        <button><FormattedMessage id="homeheader.more" /></button>
                     </div>
                     <div className='facility-content'>
                         <Slider {...settings}>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Bệnh viện Hữu nghị Việt Đức</div>
-                            </div>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Co xuong khop</div>                            </div>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Co xuong khop</div>                            </div>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Co xuong khop</div>                            </div>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Co xuong khop</div>                            </div>
-                            <div className='img-customize'>
-                                <img src={facility} />
-                                <div>Co xuong khop</div>                            </div>
+                            {dataClinic && dataClinic.length > 0 &&
+                                dataClinic.map((item, index) => {
+                                    return (
+                                        <div key={index} onClick={() => this.handleOnlick(item)}>
+                                            <div className='img-customize'>
+                                                <img src={item.image} />
+                                            </div>
+
+                                            <div className='name'>{item.name}</div>
+                                        </div>
+                                    )
+                                })
+                            }
                         </Slider>
                     </div>
                 </div>
@@ -72,4 +89,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Facility);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Facility));

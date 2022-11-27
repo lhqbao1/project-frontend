@@ -5,14 +5,19 @@ const initialState = {
     genders: [],
     roles: [],
     positions: [],
+    users: [],
+    doctor: [],
+    allDoctors: [],
+    allScheduleTime: [],
+    allRequiredDoctorInfor: [],
 }
 
 const adminReducer = (state = initialState, action) => {
+
     switch (action.type) {
         case actionTypes.FETCH_GENDER_START:
             let copyState = { ...state };
             copyState.isLoadingGender = true;
-            console.log('start action', action)
             return {
                 ...copyState,
 
@@ -60,6 +65,57 @@ const adminReducer = (state = initialState, action) => {
             return {
                 ...state,
 
+            }
+        case actionTypes.FETCH_ALL_USERS_SUCCESS:
+            state.users = action.users;
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_ALL_USERS_FAILED:
+            state.users = [];
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_DOCTOR_SUCCESS:
+            state.doctor = action.dataDoctors;
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_DOCTOR_FAILED:
+            state.doctor = [];
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_ALL_DOCTOR_SUCCESS:
+            state.allDoctors = action.dataAllDoctor;
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_ALL_DOCTOR_FAILED:
+            state.allDoctors = [];
+            return {
+                ...state
+            }
+
+        case actionTypes.FETCH_ALLCODE_SCHEDULE_SUCCESS:
+            state.allScheduleTime = action.dataTime;
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_ALLCODE_SCHEDULE_FAILED:
+            state.allScheduleTime = [];
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_SUCCESS:
+            state.allRequiredDoctorInfor = action.data;
+            return {
+                ...state
+            }
+        case actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_FAILED:
+            state.allRequiredDoctorInfor = [];
+            return {
+                ...state
             }
 
         default:

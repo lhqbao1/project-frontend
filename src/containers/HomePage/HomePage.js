@@ -7,6 +7,7 @@ import Doctor from './Section/Doctor';
 import Handbook from './Section/Handbook';
 import HomeFooter from './HomeFooter';
 import Video from './Section/Video';
+import HomeBanner from './HomeBanner';
 
 class HomePage extends Component {
 
@@ -14,6 +15,7 @@ class HomePage extends Component {
         return (
             <div>
                 <HomeHeader />
+                <HomeBanner />
                 <Specialty />
                 <Facility />
                 <Doctor />

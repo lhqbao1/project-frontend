@@ -2,7 +2,38 @@
     "homeheader": {
         "speciality": "Chuyên khoa",
         "facility": "Cơ sở y tế",
-        "welcome": "Xin chào, "
+        "welcome": "Xin chào, ",
+        "doctor": "Bác sĩ",
+        "doctorFind": "Tìm bác sĩ theo chuyên khoa",
+        "hosPlace": "Chọn bệnh viện phòng khám",
+        "goodDoctor": "Chọn bác sĩ giỏi",
+        "pack": "Gói khám",
+        "genExam": "Khám tổng quát",
+        "sp": "Hỗ trợ",
+        "basis": "nền tảng y tế",
+        "care": "chăm sóc sức khỏe y tế toàn diện",
+        "exam": "Chuyên khoa",
+        "spec": "Khám",
+        "over": "Khám",
+        "exam2": "Từ xa",
+        "gen": "Khám",
+        "exam3": "Tổng quát",
+        "mec": "Xét nghiệm",
+        "exam4": "Y học",
+        "mental": "Sức khỏe",
+        "health": "Tinh thần",
+        "dentist": "Khám",
+        "exam5": "Nha khoa",
+        "sur": "Gói",
+        "packs": "Phẫu thuật",
+        "medical": "Sản phẩm",
+        "product": "Y tế",
+        "health2": "Doanh nghiệp",
+        "enter": "Sức khỏe",
+        "spec2": "Chuyên khoa phổ biến",
+        "more": "Xem thêm",
+        "facility2": "Cơ sở y tế nổi bật",
+        "doctor2": "Bác sĩ nổi bật"
     },
     "menu": {
         "system": {
@@ -37,7 +68,8 @@
             "position": "Chức danh",
             "roleid": "Vai trò",
             "image": "Hình ảnh",
-            "button": "Tạo người dùng"
+            "button": "Tạo người dùng",
+            "buttonedit": "Sửa người dùng"
         },
         "admin": {
             "manage-user": "Người dùng",
@@ -50,7 +82,25 @@
             "specialty": "Chuyên khoa",
             "manage-specialty": "Quản lý chuyên khoa",
             "handbook": "Cẩm nang",
-            "manage-handbook": "Quản lý cẩm nang"
+            "manage-handbook": "Quản lý cẩm nang",
+            "manage-schedule": "Quản lý lịch khám",
+            "schedule": "Quản lý lịch khám "
+        },
+        "detailDoctor": {
+            "manage-doctor": "Quản lý bác sĩ",
+            "description": "Giới thiệu",
+            "select": "Chọn bác sĩ",
+            "button-save": "Lưu thông tin",
+            "button-edit": "Sửa thông tin",
+            "manage-schedule": "Quản lý bác sĩ",
+            "schedule": "Quản lý lịch khám ",
+            "patient": "Quản lý bệnh nhân khám bệnh",
+            "price": "Chọn giá khám",
+            "payment": "Phương thưc thanh toán",
+            "pro": "Chọn tỉnh thành",
+            "note": "Ghi chú",
+            "spec": "Chọn chuyên khoa",
+            "clinic": "Chọn phòng khám"
         }
     }
 }

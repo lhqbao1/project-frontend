@@ -31,4 +31,73 @@ const editUserService = (inputData) => {
 const getAllCodeService = (inputType) => {
     return axios.get(`/allcode?type=${inputType}`)
 }
-export { handleLoginApi, getAllUser, createNewUser, deleteUser, editUserService, getAllCodeService }
+
+const getDoctor = (limit) => {
+    return axios.get(`/api/get-doctor?limit=${limit}`)
+}
+
+const getAllDoctor = () => {
+    return axios.get(`/api/get-all-doctors`)
+}
+
+const createDoctorInfoService = (data) => {
+    return axios.post('/api/save-info-doctor', data)
+}
+
+const getDetailInfoDoctor = (inputId) => {
+    return axios.get(`api/get-info-doctor?id=${inputId}`)
+}
+const saveBulkSchedule = (data) => {
+    return axios.post('/api/bulk-create-schedule', data)
+}
+const getScheduleDoctorByDate = (doctorID, date) => {
+    return axios.get(`api/get-schedule-doctor-by-date?doctorID=${doctorID}&date=${date}`)
+}
+const getMoreInforDoctorById = (doctorID) => {
+    return axios.get(`/api/get-more-info-doctor-by-id?doctorID=${doctorID}`)
+}
+const getProfileDoctorById = (doctorID) => {
+    return axios.get(`/api/get-profile-doctor-by-id?doctorID=${doctorID}`)
+}
+const postPatientBookAppointment = (data) => {
+    return axios.post('/api/patient-book-appointment', data)
+}
+const postVerifyBookAppointment = (data) => {
+    return axios.post('/api/verify-book-appointment', data)
+}
+const createNewSpecialty = (data) => {
+    return axios.post('/api/create-new-specialty', data)
+}
+
+const getAllSpecialty = () => {
+    return axios.get('/api/get-all-specialty')
+}
+
+const getDetailSpecialtyById = (data) => {
+    return axios.get(`/api/get-specialty-by-id?id=${data.id}&location=${data.location}`)
+}
+
+const createNewClinic = (data) => {
+    return axios.post('/api/create-new-clinic', data)
+}
+const getAllClinic = () => {
+    return axios.get('/api/get-all-clinic')
+}
+const getDetailClinicById = (data) => {
+    return axios.get(`/api/get-clinic-by-id?id=${data.id}`)
+}
+const getAllPatientForDoctor = (data) => {
+    return axios.get(`/api/get-list-patient-for-doctor?doctorId=${data.doctorId}&date=${data.date}`)
+}
+
+
+
+export {
+    handleLoginApi, getAllUser, createNewUser, deleteUser,
+    editUserService, getAllCodeService, getDoctor, getAllDoctor,
+    createDoctorInfoService, getDetailInfoDoctor, saveBulkSchedule,
+    getScheduleDoctorByDate, getMoreInforDoctorById, getProfileDoctorById,
+    postPatientBookAppointment, postVerifyBookAppointment, createNewSpecialty,
+    getAllSpecialty, getDetailSpecialtyById, createNewClinic, getAllClinic,
+    getDetailClinicById, getAllPatientForDoctor
+}

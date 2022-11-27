@@ -35,17 +35,24 @@
         .specialty-content {
             display: flex;
             flex-direction: column;
-
+            cursor: pointer;
 
             .img-customize {
+                width: 275.5px;
+                height: 184px;
+                background-repeat: no-repeat;
 
-                img {
-                    width: 95%;
+                &:hover {
+                    opacity: 0.8;
                 }
+            }
 
-                div {
-                    margin-top: 5px;
-                    font-weight: 600;
+            .name {
+                margin-top: 5px;
+                font-weight: 600;
+
+                &:hover {
+                    color: #45c3d2;
                 }
             }
         }

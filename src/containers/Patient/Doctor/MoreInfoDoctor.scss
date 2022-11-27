@@ -1,0 +1,77 @@
+.more-infor-doctor-container {
+    height: 240px;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+
+    .content-up {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+
+        .content-up-header {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        .content-up-clinic {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .content-up-address {
+            font-size: 14px;
+        }
+    }
+
+    .content-down {
+        padding-top: 10px;
+
+        .content-down-price-before {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        .show-detail {
+            color: #45c3d2;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a {
+            color: #45c3d2;
+        }
+
+        .content-down-price-after {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid grey;
+            background-color: #f8f8f8;
+            padding: 5px;
+
+            .content-down-price-after-text {
+                font-size: 14px;
+
+                .content-down-price-after-text-opacity {
+                    color: gray;
+                }
+            }
+        }
+
+        .paymet-method {
+            background-color: #eee;
+            padding: 5px;
+            border: 1px solid grey;
+            border-top: none;
+            margin-bottom: 10px;
+        }
+    }
+
+
+}

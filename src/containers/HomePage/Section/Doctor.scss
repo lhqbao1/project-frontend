@@ -36,8 +36,7 @@
         .doctor-content {
             display: flex;
             flex-direction: column;
-
-
+            cursor: pointer;
 
             .img-customize {
                 border: 1px solid #eee;
@@ -46,12 +45,28 @@
                 display: flex !important;
                 align-items: center !important;
                 flex-direction: column !important;
+                padding-top: 30px !important;
 
-                img {
-                    width: 120px;
-                    height: 120px;
+                .img-doctor {
+                    background-repeat: no-repeat;
+                    width: 150px !important;
+                    height: 150px !important;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
 
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
+
+                .name-content {
+                    &:hover {
+                        color: #45c3d2;
+                    }
+                }
+
+
 
                 div,
                 .sub-content {

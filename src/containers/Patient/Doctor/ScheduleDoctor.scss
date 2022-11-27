@@ -1,0 +1,53 @@
+.doctor-schedule-container {
+    margin-top: 20px;
+
+    .all-schedule {
+        margin-bottom: 10px;
+
+        select {
+            padding: 10px;
+        }
+    }
+
+    .all-available-time {
+        .text-schedule {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        .schedule-content {
+
+            button {
+                width: 130px;
+                border-radius: 10px;
+                margin-right: 10px;
+                height: 40px;
+                font-size: 13px;
+                border: none;
+                background-color: #FFC419;
+                color: black;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 20px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .message {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+
+            .book-schedule-free {
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.manage-specialty-container {
+    padding: 0px 15px;
+
+    .ms-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    .button-save {
+        margin-top: 20px;
+
+        button {
+            border: none;
+            border-radius: 10px;
+            background-color: orange;
+            padding: 10px 20px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+
+
+    }
+
+
+}

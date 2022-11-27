@@ -2,7 +2,38 @@
     "homeheader": {
         "speciality": "Medical speciality",
         "facility": "Health facility",
-        "welcome": "Welcome "
+        "welcome": "Welcome ",
+        "doctor": "Doctor",
+        "doctorFind": "Find doctor by speciallity",
+        "hosPlace": "Chose hospital ",
+        "goodDoctor": "Chose good doctor",
+        "pack": "Package",
+        "genExam": "General Examination",
+        "sp": "Support",
+        "basis": "Medical Basis",
+        "care": " comprehensive medical caring",
+        "exam": "Examine",
+        "spec": "Specicality",
+        "over": "Overview",
+        "exam2": "Examine",
+        "gen": "General",
+        "exam3": "Examine",
+        "mec": "Medical",
+        "exam4": "Test",
+        "health": "Health",
+        "mental": "Mental",
+        "dentist": "Dentistry",
+        "exam5": "Examine",
+        "sur": "Surgery",
+        "packs": "Packs",
+        "product": "Product",
+        "medical": "Medical",
+        "health2": "Health",
+        "enter": "Enterprise",
+        "spec2": "Popular Speciality",
+        "more": "More",
+        "facility2": "Popular clinic",
+        "doctor2": "Popular doctor"
     },
     "menu": {
         "system": {
@@ -37,7 +68,8 @@
             "position": "Position",
             "roleid": "RoleID",
             "image": "Image",
-            "button": "CREATE"
+            "button": "CREATE",
+            "buttonedit": "EDIT"
         },
         "admin": {
             "manage-user": "Users",
@@ -50,7 +82,24 @@
             "specialty": "Specialties",
             "manage-specialty": "Manage specialties",
             "handbook": "Handbooks",
-            "manage-handbook": "Manage handbooks"
+            "manage-handbook": "Manage handbooks",
+            "manage-schedule": "Manage schedule"
+        },
+        "detailDoctor": {
+            "manage-doctor": "Manage doctors",
+            "description": "Description",
+            "select": "Choose doctor",
+            "button-save": "Save",
+            "button-edit": "Edit",
+            "manage-schedule": "Manage doctor",
+            "schedule": "Manage schedule",
+            "patient": "Manage patient",
+            "price": "Choose price",
+            "payment": "Choose payment",
+            "pro": "Choose province",
+            "note": "Choose note",
+            "spec": "Choose specialty",
+            "clinic": "Choose clinic"
         }
     }
 }

@@ -36,18 +36,25 @@
         .facility-content {
             display: flex;
             flex-direction: column;
-
+            cursor: pointer;
 
             .img-customize {
-
                 img {
                     width: 95%;
                     height: 184px;
                 }
 
-                div {
-                    margin-top: 5px;
-                    font-weight: 600;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .name {
+                margin-top: 10px;
+                font-weight: 600;
+
+                &:hover {
+                    color: #45c3d2;
                 }
             }
         }
